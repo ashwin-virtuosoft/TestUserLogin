@@ -28,6 +28,7 @@ namespace TestUserLogin
 
                         Console.WriteLine("Enter your Age");
                         int age = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Check");
 
                         String InsertCommand = "INSERT INTO TestLogin(Name,Age) VALUES (@Name,@Age)";
                         using (SqlCommand cmd = new SqlCommand(InsertCommand, sqlconnection))
